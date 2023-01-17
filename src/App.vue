@@ -40,11 +40,17 @@
 
         </div>
       </header>
+      <!-- /Navbar -->
 
+      <!-- jumbotron -->
       <section>
         <JumboComp />
       </section>
-      <!-- /Navbar -->
+      <!-- /jumbotron -->
+      
+
+      <MainComp />
+      
 
     </div>
 </template>
@@ -52,11 +58,13 @@
 <script>
 
 import JumboComp from '@/components/JumboComp';
+import MainComp from '@/components/MainComp';
 
 export default {
   name: 'App',
   components: {
     JumboComp,
+    MainComp,
   }
 }
 </script>
@@ -76,6 +84,7 @@ export default {
       display: inline-block;
       text-transform: uppercase;
       text-align: center;
+      font-family: "Fira Sans";
       a{  
         font-weight: bold;
         margin-right: 22px;

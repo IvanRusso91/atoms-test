@@ -14,16 +14,47 @@
           Discover
         </button>
 
-        <!-- blumarine -->
-        <div class="jumbo-blumarine d-flex">
-          <h4>
-            Blumarine
-          </h4>
-          <small>
-            Front end, Design UX/UI
-          </small>
+
+        <div class="box-bluma-from">
+          <!-- blumarine -->
+          <div class="jumbo-blumarine d-flex">
+            <h4>
+              Blumarine
+            </h4>
+            <small>
+              Front end, Design UX/UI
+            </small>
+          </div>
+          <!-- /blumarine -->
+
+          <!-- from -->
+          <div class="from">
+            <section class="d-flex">
+              <h5>
+                From our studio
+              </h5>
+              <img src="../assets/img/White.svg" alt="X">
+            </section>
+
+            <small>
+              Get a Weekly email with inspirational contents from <br> Zerogrey. 
+            </small>
+            
+            <div class="write-email d-flex">
+              <input  type="text" placeholder="write your e-mail">
+              <img src="../assets/img/white(1).svg" alt="arrow">
+            </div>
+
+            <div class="write-row"></div>
+
+            <div class="privacy-policy">
+              <input type="checkbox">
+              <label for="vehicle1"> I read and accept the Privacy policy</label>
+            </div>
+          </div>
+          <!-- /from -->
+
         </div>
-        <!-- /blumarine -->
    
       </div>
       <!-- /titolo + bottone -->
@@ -54,13 +85,16 @@ export default {
 
 .jumbo-box{
   position: relative;
+  margin-bottom:350px;
   .perfomcance-jumbo{
     margin-top: 176px;
     h1{
+      font-family: Butler;
       width: 814px;
-      font-size: 72px;
+      font-size: 80px;
     }
     p{
+      font-family: "Fira Sans";
       color: $fifth-color;
       width: 329px;
       font-size: 1.2rem;
@@ -74,13 +108,63 @@ export default {
         color: $secondary-color;
       }
     }
-    .jumbo-blumarine{
-      width: 400px;
-      text-align: right;
-      flex-direction: column;
-      margin-top: 70px;
-      small{
-        color: $fifth-color;
+    .box-bluma-from{
+      .jumbo-blumarine{
+        font-family: Butler;
+        width: 400px;
+        text-align: right;
+        flex-direction: column;
+        margin-top: 75px;
+        small{
+          font-family: "Fira Sans";
+          color: $fifth-color;
+        }
+      }
+      .from{
+        position: absolute;
+        right: 40px;
+        top: 340px;
+        margin-right: -75px;
+        padding: 64px 58px 51px 48px;
+        background-color: $primary-color;
+        color : $secondary-color;
+        section{
+          justify-content: space-between;
+          h5{
+            font-family: Butler;
+            font-size: 32px;
+          } 
+        }
+        small{
+          font-family: "Fira Sans";
+        }
+        .write-email{
+          margin-top: 41px;
+          justify-content: space-between;
+          input{
+            width: 290px;
+            padding-bottom: 3px;
+            background-color: transparent;
+            border: none;
+          }
+        }
+        .write-row{
+          width: 100%;
+          border: 1px solid $secondary-color;
+          border-top: none;
+        }
+        .privacy-policy{
+          margin-top: 20px;
+          input{
+            width: 16px;
+            height: 16px;
+          }
+          label{
+            font-family: "Fira Sans";
+            margin-left: 8px;
+            font-size: 12px;
+          }
+        }
       }
     }
   }
