@@ -33,7 +33,7 @@
           <div class="group2 d-flex container">
 
             <div class="sub-group d-flex">
-              <h5>Merchant of records</h5>  
+              <h5>Merchant of records</h5>
               <small>Neque porro quisquam est, qui dolorem ipsum quia   dolor sit amet, sed quia empora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
               </small>
             </div>
@@ -77,6 +77,11 @@
           <small>
             Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet dolorem ipsum quia dolor sit amet.
           </small>
+          <div class="box-btn d-flex">
+            <button class="btn-why">
+              Discover
+            </button>
+          </div>
         </div>
       </div> 
       <!-- /img mancante + testo -->
@@ -149,16 +154,26 @@ main{
         @include btn-1;
         font-size: 14px;
         margin-top: 20px;
+        &:hover{
+          cursor: pointer;
+          background-color: $fourth-color;
+          color: $secondary-color;
+        }
       }
     }
     .group2{
       flex-direction: column;
       .sub-group{
         justify-content: space-around;
+        opacity: 0.5;
+        animation: 1s;
+        &:hover{
+          cursor: pointer;
+          opacity: 1;
+        }
         h5{
           width: 200px;
           color:$primary-color;
-          opacity: 0.5;
           font-family: Butler;
           font-size: 32px;
           font-weight: bold;
@@ -167,9 +182,6 @@ main{
           text-align: right;
           &:not(:nth-last-child(1)){
             padding-bottom: 70px ;
-          }
-          &:hover{
-            opacity: 1;
           }
         }
         small{
@@ -213,10 +225,80 @@ main{
         font-size: 16px;
         letter-spacing: 0;
         line-height: 24px;
-        
+      }
+      .box-btn{
+        justify-content: end;
+        margin-top: 28px;
+        .btn-why{
+          width: 144px;
+          height: 40px;
+          border: 2px solid $fourth-color;
+          border-radius: 30px;
+          color:$secondary-color;
+          font-family: "Fira Sans";
+          font-weight: bold;
+          border-color: $secondary-color;
+          background-color: transparent;
+          transition: 0.5s;
+          &:hover{
+            background-color: $secondary-color;
+            color: black;
+          }         
+        }
       }
     }
   }
 }
 
+/* MQ */
+
+@media screen and (min-width:1200px) and (max-width: 1500px){
+
+  main{
+    .zerogrey-text{
+      margin-bottom:220px;
+    }
+    .oval0{
+      top: 1055px;
+      right: -150px;
+    }
+    .oval1{
+      position: absolute;
+      z-index: -1;
+      top: 1300px;
+      right: 80px;
+      height: 1031.25px;
+      width: 1031.25px;
+      opacity: 0.16;
+      background-color: #80C7E5;
+      border-radius: 50%;
+
+    }
+  }
+}
+
+@media screen and (min-width:800px) and (max-width: 1200px){
+
+  main{
+    .zerogrey-text{
+      margin-bottom:220px;
+    }
+    .oval0{
+      top: 1055px;
+      right: -150px;
+    }
+    .oval1{
+      position: absolute;
+      z-index: -1;
+      top: 1300px;
+      right: 80px;
+      height: 1031.25px;
+      width: 1031.25px;
+      opacity: 0.16;
+      background-color: #80C7E5;
+      border-radius: 50%;
+
+    }
+  }
+}
 </style>

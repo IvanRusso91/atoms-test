@@ -85,6 +85,7 @@ export default {
 
 .jumbo-box{
   position: relative;
+  margin-top: 300px;
   margin-bottom:350px;
   .perfomcance-jumbo{
     margin-top: 176px;
@@ -188,6 +189,90 @@ export default {
     background-color: $sixth-color;
   }
 
+}
+
+/* MQ */
+
+
+@media screen and (min-width:1200px) and (max-width: 1500px){
+
+  .jumbo-box{
+    margin-bottom: 400px;
+    .perfomcance-jumbo{
+      h1{
+        width: 714px;
+        font-size: 60px;
+      }
+      p{
+        font-size: 1.1rem;
+      }
+    }
+    .jumbo-img{
+      position: absolute;
+      z-index: -1;
+      height: 566px;
+      width: 755px;
+      background-image: url('../assets/img/Blauer_Detroit_D5_612.jpg');
+      top:-120px;
+      right: 135px;
+    }
+    .sfera{
+      position: absolute;
+      z-index: -2;
+      top: -160px;
+      right: -40px;
+      width: 880px;
+      height: 880px;
+      border-radius: 50%;
+      background-color: $sixth-color;
+    }
+  }
+}
+
+@media screen and (min-width:800px) and (max-width: 1200px){
+
+  .jumbo-box{
+    margin-bottom: 800px;
+    margin-top: 100px;
+    margin-left: 150px;
+    .perfomcance-jumbo{
+      h1{
+        width: 500px;
+        font-size: 70px;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    }
+    .jumbo-img{
+      position: absolute;
+      z-index: -1;
+      height: 500px;
+      width: 750px;
+      background-image: url('../assets/img/Blauer_Detroit_D5_612.jpg');
+      background-position: center;
+      background-size: cover;
+      top:600px;
+      right: 75px;
+    }
+    .sfera{
+      position: absolute;
+      z-index: -2;
+      top: 400px;
+      right: -300px;
+      width: 880px;
+      height: 880px;
+      border-radius: 50%;
+      background-color: $sixth-color;
+    }
+     
+  }
+
+ 
+
+  .from{
+        display: none;
+  }
 }
 
 </style>
